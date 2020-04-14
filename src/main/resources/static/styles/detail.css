@@ -1,0 +1,154 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.nav {
+  display: flex;
+  width: 100%;
+  height: 70px;
+  text-align: center;
+  
+  background-color: rgb(75, 70, 70);
+}
+
+.logo {
+  margin-left: 80px;
+  height: 70px;
+  border-radius: 50%;
+}
+
+.search {
+  flex-grow: 1;
+  display: inline;
+}
+
+.search-box {
+  height: 30px;
+  margin-top: 20px;
+  min-width: 270px;
+  height: 30px;
+  border: none;
+  border-radius: 5px;
+}
+
+.icon-sousuo:hover {
+  cursor: pointer;
+}
+
+.content {
+  display: flex;
+  width: 80%;
+  height: 1000px;
+  margin: 0 auto;
+  flex-direction: column;
+}
+
+.title {
+  margin-left: 50px;
+  line-height: 50px;
+  font-size: 25px;
+  color: rgb(22, 22, 22);
+}
+
+.poster {
+  float: left;
+  width: 170px;
+  height: 220px;
+  margin-left: 70px;
+  margin-right: 200px;
+  background-position: center;
+}
+
+.info {
+  float: left;
+  margin-left: 70px;
+  font-size: 18px;
+}
+
+.info-title {
+  border-radius: 5px;
+  background-color: gray;
+  color: white;
+}
+
+
+.summary {
+  margin: 20px auto 10px 50px;
+  font-size: 20px;
+  line-height: 30px;
+  font-family: serif;
+  text-indent: 2em;
+}
+
+.film-review {
+  margin: 20px auto 10px 50px;
+  text-indent: 2em;
+}
+
+.film-review ul {
+  list-style: none;
+}
+
+.film-review li {
+  margin: 20px 0;
+}
+
+.film-review img {
+  vertical-align: middle;
+  width: 50px;
+  height: 50px;
+}
+
+.movie-comments span {
+  vertical-align: middle;
+  line-height: 50px;
+  border-radius: 5px;
+  background-color: rgba(243, 150, 122, 0.5);
+}
+
+.review-content {
+  display: -webkit-box;
+  text-overflow: ellipsis;
+  overflow: hidden; 
+  -webkit-box-orient: vertical;
+
+  -webkit-line-clamp: 2;
+  margin-left: 2em;
+  font-size: 15px;
+}
+
+.review-content-1 {
+  display: block;
+} 
+
+.recommend {
+  margin: 20px auto 10px 50px;
+  text-indent: 2em;
+  width: 100%;
+}
+
+.recommend-movies {
+  display: flex;
+  width: 100%;
+  margin: 20px 0 0 30px;
+}
+
+.recommend-item {
+  flex-grow: 1;
+}
+
+.recommend-covers {
+  display: block;
+  height: 200px;
+}
+
+.recommend-item a {
+  text-decoration: none;
+  color: black;
+}
+
+.recommend-item p {
+  text-indent: 0;
+}
+
