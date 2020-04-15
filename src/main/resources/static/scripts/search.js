@@ -19,7 +19,7 @@ function renderSearchReaults(data) {
   <li>
   <a href="detail.html?movieId=${data.id}">
     <div class="movie-infomation">
-      <p class="title">${data.title} - ${data.originTitle}</p>
+      <p class="title">${data.title} - ${data.originTitle}(${data.pubdates})</p>
       <div class='poster' style="background-image:url(${url})"></div>
       <div class="info">
         <p>导演：${data.directors}</p>
