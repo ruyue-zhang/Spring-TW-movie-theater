@@ -36,7 +36,7 @@ function renderSummary(data) {
   document.getElementsByClassName("summary")[0].innerHTML += `<p>${data.summary}</p>`;
 }
 
-function getReviews(data, movieId) {
+function getReviews(movieId) {
   ajax({
     url: `http://localhost:8080/v2/movie/reviews?movie_id=${movieId}`,
     method: "GET",
