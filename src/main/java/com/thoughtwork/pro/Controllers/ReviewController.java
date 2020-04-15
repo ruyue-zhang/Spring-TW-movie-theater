@@ -20,5 +20,4 @@ public class ReviewController {
     public List<Reviews> findReviewsById(@RequestParam(name = "movie_id") int movie_id) {
        return reviewRepository.selectReviewsById(movie_id);
     }
-
 }
