@@ -1,7 +1,7 @@
 package com.thoughtwork.pro.Controllers;
 
 import com.thoughtwork.pro.Entity.Reviews;
-import com.thoughtwork.pro.Repositories.ReviewRepository;
+import com.thoughtwork.pro.Services.ReviewService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -14,10 +14,15 @@ import java.util.List;
 @RequestMapping("v2/movie")
 public class ReviewController {
     @Autowired
-    private ReviewRepository reviewRepository;
+    private ReviewService reviewService;
 
     @GetMapping("reviews")
-    public List<Reviews> findReviewsById(@RequestParam(name = "movie_id") int movie_id) {
-       return reviewRepository.selectReviewsById(movie_id);
+    public List<Reviews> findReviewsById(@RequestParam(name = "movie_id") int movieId) {
+        try {
+            return reviewService.findReviewsById(movieId);
+        } catch (RuntimeException e) {
+            e.printStackTrace();
+        }
+       return null;
     }
 }
