@@ -1,12 +1,13 @@
-let BASIC_URL = 'http://127.0.0.1:8888';
-let movieId = '26942674';
-const top250 = 'top250';
 let movieDatas = [];
-getAllData();
+window.onload =function() {
+  getAllData();
+};
+
 
 function getAllData() {
+  const LANDING_URL = "http://localhost:8080/v2/movie/top250";
   ajax({
-      url: BASIC_URL + '/v2/movie/' + top250,
+      url: LANDING_URL,
       method: "GET", 
       success: function(responseText) {
          mainPage(responseText);
