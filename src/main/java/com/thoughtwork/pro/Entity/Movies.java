@@ -17,12 +17,12 @@ public class Movies {
     private String durations;
     private String pubdates;
     private String summary;
-    private float  rating;
+    private float rating;
 
     public Movies() {
     }
 
-    public Movies(int id, String title, String originTitle, String year, String image, String directors, String casts, String genres, String countries, String languages, String durations, String pubdates, String summary, float  rating) {
+    public Movies(int id, String title, String originTitle, String year, String image, String directors, String casts, String genres, String countries, String languages, String durations, String pubdates, String summary, float rating) {
         this.id = id;
         this.title = title;
         this.originTitle = originTitle;
@@ -143,11 +143,11 @@ public class Movies {
         this.summary = summary;
     }
 
-    public float  getRating() {
+    public float getRating() {
         return rating;
     }
 
-    public void setRating(float  rating) {
+    public void setRating(float rating) {
         this.rating = rating;
     }
 }

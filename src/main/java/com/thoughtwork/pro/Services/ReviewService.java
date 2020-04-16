@@ -13,8 +13,8 @@ public class ReviewService {
     @Autowired
     private ReviewRepository reviewRepository;
 
-    public List<Reviews> findReviewsById(@RequestParam(name = "movie_id") int movie_id) {
-        return reviewRepository.selectReviewsById(movie_id);
+    public List<Reviews> findReviewsById(@RequestParam(name = "movie_Id") int movie_Id) {
+        return reviewRepository.selectReviewsById(movie_Id);
     }
 
 }

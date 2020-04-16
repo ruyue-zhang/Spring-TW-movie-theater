@@ -26,7 +26,7 @@ function renderSearchReaults(data) {
         <p>主演：${data.casts}</p>
         <p>类型：${data.genres}</p>
         <p>制片国家/地区：${data.countries}</p>
-        <p>语言：${data.language}</p>
+        <p>语言：${data.languages}</p>
         <p>片长：${data.durations}</p>
         <p>豆瓣评分：${data.rating}</p>
       </div>

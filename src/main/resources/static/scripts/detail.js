@@ -38,7 +38,7 @@ function renderSummary(data) {
 
 function getReviews(movieId) {
   ajax({
-    url: `http://localhost:8080/v2/movie/reviews?movie_id=${movieId}`,
+    url: `http://localhost:8080/v2/movie/reviews?movie_Id=${movieId}`,
     method: "GET",
     success: function(responseText) {
       renderFilmReview(responseText);

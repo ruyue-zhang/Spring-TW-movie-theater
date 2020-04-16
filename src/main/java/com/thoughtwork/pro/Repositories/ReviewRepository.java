@@ -9,6 +9,6 @@ import java.util.List;
 
 
 public interface ReviewRepository extends CrudRepository<Reviews, Integer> {
-    @Query("SELECT id,movie_id,user_name,title,content,avatar FROM reviews where movie_id=:movie_id")
-    List<Reviews> selectReviewsById(@Param("movie_id") int movie_id);
+    @Query("SELECT id,movie_id,user_name,title,content,avatar FROM reviews where movie_id=:movie_Id")
+    List<Reviews> selectReviewsById(@Param("movie_Id") int movie_Id);
 }
